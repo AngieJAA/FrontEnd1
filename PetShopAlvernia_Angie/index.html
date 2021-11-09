@@ -1,77 +1,102 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+ <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>PetShop</title>
-    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css">
-</head>
-<body>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+ </head>
+  <body>
+  
     <header>
-      <div>
+
+     <div class="top">
         <span>Grandes ofertas en comederos</span>
-        <select class="top">
+        <select class="select">
           <option value="Español">Español</option>
           <option value="English">English</option>
         </select>
-        <select class="top">
+        <select class="select">
           <option value="PesosArgentinos">$ARG</option>
           <option value="DolaresAmericanos">$USD</option>
         </select>
-      </div>
-      <div>
-       <span><img src="/img/Logo.jpg" alt="FrontCat&Dog"></span>
+     </div>
+
+     <div class="logo">
+       <span><img id=imagenlogo src="./img/logoheader.PNG" alt="FrontCat&Dog"></span> 
        <ul>
-        <li type="none"><a href="#"><i class="fas fa-paw"></i>Categorías</a></li>
-        <li type="none"><a href="#"><i class="fas fa-paw"></i>Pets</a></li>            
-        <li type="none"><a href="#"><i class="fas fa-paw"></i>Nosotros</a></li>
-        <li type="none"><a href="#"><i class="fas fa-paw"></i>Contáctanos</a></li>
+        <li type="none"><a style="color:white; text-decoration: none;" href="#"><i class="fas fa-paw"></i>Categorías</a></li>
+        <li type="none"><a style="color:white; text-decoration: none;"href="#"><i class="fas fa-paw"></i>Pets</a></li>            
+        <li type="none"><a style="color:white; text-decoration: none;"href="#"><i class="fas fa-paw"></i>Nosotros</a></li>
+        <li type="none"><a style="color:white; text-decoration: none;"href="#"><i class="fas fa-paw"></i>Contáctanos</a></li>
        </ul>
-      </div>        
+     </div>      
+
     </header>
+    <div id="banner">
+      <span id="texto1">¡Es un placer tenerte aquí!</span> 
+      <p id="texto2">¡Comederos en descuento!</p>
+      <span id="texto3">  COMEDEROS  </span>
+    </div>
 
-    <div>
-      <p>¡Es un placer tenerte aquí!</p>
-      <p>¡Comederos en descuento!</p>
-      <p>COMEDEROS</p>
-    </div>
-   
-    <div> 
-      <i class="fas fa-paw"></i>
-      <h1>Productos Destacados</h1>
-      <p>Comederos - Accesorios - Comida</p>
-    </div>
+    <div id="caja_madre"> 
+          
+      <div> 
+       <p id=pawicon><i class="fas fa-paw"></i></p>
+       <h1>Productos Destacados</h1>
+       <p id="productos">Comederos - Accesorios - Comida</p>
+      </div>
     
-    <div>
-     <img src="/img/churrasquito.png">
-     <p class="cafe">Juguete Churrasquito</p>
-     <p class="precio">$150</p>
+      <div id="cards">
+       <img src="./img/churrasquito.png">
+       <p class="cafe">Juguete Churrasquito</p>
+       <p class="precio">$150</p>
+       <img src="./img/comedero.png">
+       <p class="cafe">Comedero para perro</p>
+       <p class="precio">$250</p>
+       <img src="./img/Huesito.png">
+       <p class="cafe">Juguete Huesito</p>
+       <p class="precio">$650</p>
+      </div>
 
-     <img src="/img/comedero.png">
-     <p class="cafe">Comedero para perro</p>
-     <p class="precio">$250</p>
-
-     <img src="/img/Huesito.png">
-     <p class="cafe">Juguete Huesito</p>
-     <p class="precio">$650</p>
-    </div>
-
-    <div>
-      <h2>Contáctanos</h2>
-      <ul>
-        <li type="none">Nombre y Apellido</li>
-        <li type="none">Ingresá tu correo electrónico</li>
-        <li type="none">Teléfono</li>
-      </ul>
-      <span>Resetear</span> <span>Enviar</span>
-    </div>
-
-    <div>
+      <div >
+       <h2 class="contacto">Contáctanos</h2>
       
+         <p class="fondo">Nombre y Apellido</p>
+         <p class="fondo">Ingresá tu correo electrónico</p>
+         <p class="fondo">Teléfono</p>
+         
+      
+       <p class="contacto"><span id="resetear">Resetear</span> <span id="enviar">Enviar</span></p>
+      </div>
+
+      <div class="suscripcion">
+        <span><i class="far fa-envelope"></i></span id="suscribete"> Suscríbete para más novedades <span id="ingresa">Ingresá tu correo electrónico</span> <span id="suscribirme">Suscribirme</span>
+      </div>
+
+      <div id="datos">
+       <span class="informacion"><i class="fas fa-map-marker-alt"></i>Localidad </span> 
+       <p class="informacion2">Café-Provincia</p>
+       <span class="informacion"><i class="fas fa-phone-volume"></i>Teléfono</span>  
+       <p class="informacion2">Número de teléfono</p>
+       <span class="informacion"><i class="fas fa-at"></i>Correo electrónico</span> 
+       <p class="informacion2">Dirección de correo</p>
+       <img src="./img/logo_footer.PNG">
+      </div>
     </div>
 
 
-</body>
+    <footer><span>Redes sociales:</span> <i class="fab fa-facebook-f"></i>  <i class="fab fa-instagram"></i>    <i class="fab fa-linkedin-in"></i>
+      <p>Todos los derechos reservados Front End</p> 
+    </footer>  
+    
+
+   
+     
+   </body>
 </html>

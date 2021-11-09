@@ -1,0 +1,50 @@
+body{font-family: 'Roboto', sans-serif;}
+
+.top{color: white; background-color: black; font-size: 10px; position: relative; width: 1024px; height: 20px;}
+.select{color: white; background-color: black; font-size: 10px;}
+
+.logo{background-color: #F0A83E; width: 1025px; font-size: 13px;}
+
+#banner{background-image: url(../img/bowl-and-pet-daities-on-green-background\ 1.png); 
+    position: absolute;
+    width: 1025px;
+    height: 409px;
+    top: 132px;}
+
+#texto1{background-color: white; border-radius: 5px ; color: #3C2313; font-size: 30px;}
+
+#texto2{color: #3C2313; font-size: 16px;}
+
+#texto3{background-color: #F0A83E; color: white; border-radius: 5px; font-size: 16px;}
+
+h1{font-size: 40px; font-weight: 700; color: #3C2313; text-align: center;}
+#productos{font-size: 15; text-align: center;}
+.cafe{color:#3C2313; font-size: 15px; font-weight: 500;}
+.precio{color: #F0A83E; font-size: 15px; font-weight: 500;}
+
+h2{font-size: 25px; font-weight: 700; color: #3C2313;}
+
+#caja_madre{ width: 1025px;
+    height: 800px;
+    background-color: white; 
+    position: relative;     top: 395px;}
+
+#pawicon{color: #F0A83E; font-size: 70px; text-align: center;}
+
+.contacto{text-align: center;}
+#resetear{color:white;background-color: #8A8787;border-radius: 15px; font-size: 16px;}
+#enviar{color:white;background-color:#F0A83E;border-radius: 15px;font-size: 16px;}
+
+#datos{color: white;background-color:#3C2313; }
+
+.fondo{color: white;background-color: #3C2313; font-size: 9px;}
+
+.suscripcion{width: 1024px;height: 60px; color:white; background-color: #F0A83E;}
+#suscribete{font-size: 20px; font-weight: 700;}
+#ingresa{font-size: 9px;font-weight: 400;background: #FFFFFF;border-radius: 15px; color: #A0A0A0;}
+#suscribirme{font-size: 9px;font-weight: 700; background: #3C2313;border-radius: 15px; }
+
+.informacion{font-size: 20px; color: white; font-weight: 700;}
+.informacion2{font-size: 10px; color:#8A8787}
+
+footer{position: relative; color:white;background-color: black; width: 1025px; text-align: center; font-size: 10px;font-weight: 700; position: relative; top: 1320px;}
