@@ -6,7 +6,7 @@ box-sizing: border-box;
 
 body{
 font-family: 'Be Vietnam Pro', sans-serif;
-background-image: url(/imagenes/bg-tablet-pattern.svg);
+background-image: url(../imagenes/bg-tablet-pattern.svg);
 background-repeat: no-repeat;
 background-position: 135% -12%; 
 background-size: 60%;
@@ -110,6 +110,10 @@ opacity: 0.8;
 /******* CONTENEDOR MAIN ******/
 
 main{
+background-image: url(../imagenes/bg-tablet-pattern.svg);
+background-repeat: no-repeat;
+background-position: -90% 98%; 
+background-size: 60%;
 display: flex;
 flex-direction: column;
 justify-content: space-around;
@@ -254,6 +258,10 @@ padding-top: 55px;
 padding-bottom: 20px;
 }
 
+.desplazar{
+display: none;
+}
+
 /**CUARTA SECCIÓN***/
 
 .orange{
@@ -278,7 +286,6 @@ width:40%;
 font-size: 40px;
 font-weight: 700;
 }
-
 
 
 
@@ -407,7 +414,7 @@ text-align: right;
 
 
 
-/*****MEDIA QUERIES*****/
+/*****MEDIA QUERIES - 375px*****/
 
 @media (max-width:375px){
 
@@ -450,8 +457,9 @@ text-align: right;
 
 /* Primera Sección MQ Gráfico*/
 
-    .main{
-    align-items: center;
+    main{
+    background-position: 320% 21%; 
+    background-size: 80%;
     }
     .grafico{
     flex-direction: column-reverse;
@@ -534,8 +542,8 @@ text-align: right;
     /* Tercera Sección MQ Testimonios */
 
     .testimony{
-    height: 600px;
-    margin-top: 40px;
+    height: 500px;
+    margin-top: 70px;
     }
 
     .cardsContainer{
@@ -546,10 +554,16 @@ text-align: right;
     flex-direction: column;
     width: 350px;
     height: 320px ;
+    margin-top: 30px;
     }
 
     #Anisha,#Richard{
     display: none;
+    }
+
+    .desplazar{
+    display: block;
+    margin-bottom: 30px;
     }
 
 
@@ -560,7 +574,7 @@ text-align: right;
     height: 400px;
     justify-content: center;
     align-items: center;
-    margin-top: 40px;
+    margin-top: 30px;
     }
 
     #simplify{
