@@ -8,14 +8,14 @@ body{
 font-family: 'Be Vietnam Pro', sans-serif;
 background-image: url(/imagenes/bg-tablet-pattern.svg);
 background-repeat: no-repeat;
-background-position: 117% -9%; 
-background-size: 50%;
+background-position: 135% -12%; 
+background-size: 60%;
 width: 98vw;
 max-width: 1440px;
-/* BACKGROUND PENDIENTE,REVISAR */
 }
 
-/* Atributos generales */
+
+/****** ATRIBUTOS GENERALES ******/
 
 a{
 text-decoration: none;
@@ -45,7 +45,7 @@ color:#B3B2B7 ;
 line-height: 150%;
 }
 
-/****Header****/
+/****** HEADER ******/
 
 header {
 display: flex;
@@ -61,8 +61,8 @@ align-items: center;
 }
 
 header .headerContainer img {
-height: 35px;
-width: 190px;
+height: 25px;
+width: 150px;
 }
 
 header .headerContainer nav ul {
@@ -83,9 +83,8 @@ font-size: 13px;
 color:#B3B2B7;
 }
 
-/* TRIPLE ES EL ICONO DE HAMBURGUESA */
-.triple{
-    color:#232C50;
+.fa-bars:before, .fa-navicon:before {
+display: none;
 }
 
 .button {
@@ -108,6 +107,7 @@ box-shadow: 1px 8px 18px -7px #F3603B, -1px 8px 18px -7px #F3603B;
 opacity: 0.8;
 }
 
+/******* CONTENEDOR MAIN ******/
 
 main{
 display: flex;
@@ -116,7 +116,8 @@ justify-content: space-around;
 align-items: center;
 }
 
-/* Primera sección*/
+
+/***PRIMERA SECCIÓN-GRÁFICO***/
 
 .grafico{
 display: flex;
@@ -128,14 +129,23 @@ height: 520px;
 display: flex;
 flex-direction: column;
 justify-content: center;
-}
+width: 50%;}
 
 .manage{
 width: 60%;
 height: 110px;
 }
 
-/* Segunda sección  */
+.imgGrafico{
+width: 50%;
+height: 100%;
+}
+
+.imgGrafico img{
+width: 100%;
+height: 100%;
+}
+/***SEGUNDA SECCIÓN***/
 
 .sobreNosotros{
 display:flex;
@@ -201,7 +211,7 @@ margin-right: 25px;
 border-radius: 30px;
 }
 
-/* Tercera Sección, Cards */
+/***PRIMERA SECCIÓN-CARDS***/
 
 .testimony{
 display:flex;
@@ -244,7 +254,7 @@ padding-top: 55px;
 padding-bottom: 20px;
 }
 
-/* Cuarta Sección, Simplify */
+/**CUARTA SECCIÓN***/
 
 .orange{
 display: flex;
@@ -272,7 +282,7 @@ font-weight: 700;
 
 
 
-/* Footer */
+/****** FOOTER ******/
 
 footer{
 display: flex;
@@ -283,16 +293,31 @@ height: 247px;
 width: 98.5vw;
 }
 
+.redSocial,.navFooter,.formulario{
+height: 50%;
+}
+/*** LOGO Y REDES SOCIALES ***/
+
 #logoFooter{
 color: white;
 }
 
-i{
+.redSocial{
+display: flex;
+flex-direction: column;
+justify-content: space-between;
+align-items: center;
+}
+    
+
+/*** NAVEGADORES ***/
+
+.red{
 color: white;
 font-size: 25px;
 }
 
-i:hover{
+.red:hover{
 color:#F3613C;
 cursor: pointer;
 }
@@ -306,25 +331,7 @@ line-height: 200%;
 footer nav ul li a:hover{
 color:#F3613C;
 }
-.redes{
-color: red;
-}
 
-
-.redSocial,.navFooter,.formulario{
-height: 50%;
-}
-
-footer .redesSociales img{
-width: 70%;
-}
-
-.redSocial{
-display: flex;
-flex-direction: column;
-justify-content: space-between;
-align-items: center;
-}
 
 .navegadores{
 display: flex;
@@ -333,7 +340,7 @@ justify-content: space-between;
 }
 
 
-/* Formulario */
+/*** FORMULARIO ***/
 
 .formulario{
 display: flex;
@@ -352,6 +359,7 @@ display: flex;
 flex-direction: column;
 }
 
+/* Ingreso email */
 .input{
 display: block;
 border-radius: 50px;
@@ -394,16 +402,19 @@ text-align: right;
 
 
 
-/* background-image: url(/imagen.jpg);
-background-size: ;
-background-repeat:;
-background-position:;
- */
+
+
+
 
 
 /*****MEDIA QUERIES*****/
 
 @media (max-width:375px){
+
+    body{
+    background-position: 60px -70px; 
+    background-size: 100%;
+    }
 
     main{
     width: 370px;
@@ -420,7 +431,7 @@ background-position:;
     }
     header .headerContainer img {
     width: 110px;
-    height: 25px;
+    height: 20px;
     }
     header nav{
     display: none;
@@ -430,13 +441,18 @@ background-position:;
     display: none;
     }
 
-    .triple{
+    .fa-bars:before, .fa-navicon:before {
     display: block;
+    color: #232C50;
+    font-size: 18px;
     }
 
 
 /* Primera Sección MQ Gráfico*/
 
+    .main{
+    align-items: center;
+    }
     .grafico{
     flex-direction: column-reverse;
     width: 330px;
@@ -444,11 +460,15 @@ background-position:;
     }
 
     .bring{
-    width: 350px;
     align-items: center;
-    
+    width: 100%;
     }
-    
+
+    .imgGrafico{
+    width: 100%;
+    height: 330px;
+    }
+
     h1{
     font-size: 38px;
     text-align: center;
@@ -457,10 +477,12 @@ background-position:;
 
     .manage{
     text-align: justify;
-    width: 330px;
+    width: 95%;
     }
-
+    
+    
     /* Segunda Sección MQ Whats y números*/
+    
     .sobreNosotros{
     flex-direction: column;
     width: 370px;
@@ -501,7 +523,7 @@ background-position:;
         }
     .track p{
         width: 90%;
-        padding-left: 0px;
+        padding-left: 35px;
     }
     
     .track div{
@@ -513,7 +535,9 @@ background-position:;
 
     .testimony{
     height: 600px;
+    margin-top: 40px;
     }
+
     .cardsContainer{
     flex-direction: column;
     }
@@ -521,37 +545,39 @@ background-position:;
     .cards{
     flex-direction: column;
     width: 350px;
-}
+    height: 320px ;
+    }
 
-#Anisha,#Richard{
+    #Anisha,#Richard{
     display: none;
-}
+    }
 
 
 /* Cuarta sección - Simply */
 
-.orange{
+    .orange{
     flex-direction: column;
     height: 400px;
     justify-content: center;
     align-items: center;
-}
+    margin-top: 40px;
+    }
 
-#simplify{
+    #simplify{
     width: 330px;
     text-align: center;
     font-size: 38px;
     padding-bottom: 20px;
-}
+    }
 
 
 /* Footer */
 
     footer{
-        position: relative;
-        flex-direction: column-reverse;
-        height: 500px;
-        justify-content: space-around;
+    position: relative;
+    flex-direction: column-reverse;
+    height: 500px;
+    justify-content: space-around;
     }
 
     .navegadores{
